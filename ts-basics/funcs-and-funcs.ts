@@ -1,13 +1,15 @@
 // Function Parameters
-export function printToFile(text: string, callback: () => void): void {
-  console.log(text);
-  callback()
-}
-// ---------------------------------
+// export function printToFile(text: string, callback: () => void): void {
+//   console.log(text);
+//   callback()
+// }
 
-type MutationFunction = (v: number) => number
+export type MutationFunction = (v: number) => number
 
-export function arrayMutate(numbers: number[], mutate: MutationFunction): number[] {
+export function arrayMutate(
+  numbers: number[], 
+  mutate: MutationFunction
+  ): number[] {
   return numbers.map(mutate)
 }
 
@@ -17,8 +19,7 @@ export function arrayMutate(numbers: number[], mutate: MutationFunction): number
 
 
 // Return Functions
-
-type AdderFunction = (val: number) => number
+export type AdderFunction = (val: number) => number
 
 export function createAdder(num: number): AdderFunction {
   return (val: number) => num + val
