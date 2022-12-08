@@ -1,4 +1,2 @@
-var p = {
-    paint: "Let's paint!"
-};
-console.log(typeof p);
+var rawDataFirst = 100;
+var rawDataSecond = 'Hello';
