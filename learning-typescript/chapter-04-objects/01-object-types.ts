@@ -22,18 +22,18 @@
 // poetLater = 'Sappho' // Error: Type 'string' is not assignable to type '{ born: number; name: string; }'.
 // -----------------------------------------------------------------
 
-// 2. Aliased Object Types
-type Poet = {
-  born: number,
-  name: string
-}
+// // 2. Aliased Object Types
+// type Poet = {
+//   born: number,
+//   name: string
+// }
 
-let poetLater: Poet
+// let poetLater: Poet
 
-poetLater = {
-  born: 1935,
-  name: 'Mary Oliver',
-}
+// poetLater = {
+//   born: 1935,
+//   name: 'Mary Oliver',
+// }
 
-// poetLater = 'Mary Oliver' // Error: Type 'string' is not assignable to type 'Poet'.
+// // poetLater = 'Mary Oliver' // Error: Type 'string' is not assignable to type 'Poet'.
 
