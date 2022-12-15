@@ -12,16 +12,16 @@
 
 // 2. Spreading Rest Parameters
 
-function logWarriors(greeting: string, warriors: string[]){
+function logWarriors(greeting: string, ...warriors: string[]){
   for (const warrior of warriors){
     console.log(`${greeting}, ${warrior}`);
   }
 }
 
-const names = ['Cathay William', 'Lozen', 'Nzinga']
-logWarriors('Welcome', names)
+const warriors = ['Cathay William', 'Lozen', 'Nzinga']
+logWarriors('Welcome', ...warriors)
 
 const birthYears = [1990, 2000, 2001]
-logWarriors('Welcome', birthYears)
-// Error: Argument of type 'number[]' is not assignable to parameter of type 'string[]'.
+logWarriors('Welcome', ...birthYears)
+// Error: // Error: Argument of type 'number[]' is not assignable to parameter of type 'string[]'.
   // Type 'number' is not assignable to type 'string'.
